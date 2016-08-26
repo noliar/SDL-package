@@ -1,0 +1,36 @@
+﻿{
+  "version": "2.0.4-*",
+
+  "description": "Simple DirectMedia Layer is a cross-platform development library designed to provide low level access to audio, keyboard, mouse, joystick, and graphics hardware via OpenGL and Direct3D.",
+
+  "packOptions": {
+    "repository": {
+      "type": "git",
+      "url": "git://github.com/noliar/SDL-package"
+    },
+    "licenseUrl": "http://www.gzip.org/zlib/zlib_license.html",
+    "projectUrl": "https://github.com/noliar/SDL-package",
+    "tags": [
+      "SDL",
+      "native",
+      "netcore"
+    ]
+  },
+
+  "frameworks": {
+    "netstandard1.0": {
+      "dependencies": {
+        "DevZH.SDL.Standard.Native": {
+          "target": "project"
+        }
+      }
+    },
+    "uap10.0": {
+      "dependencies": {
+        "DevZH.SDL.UWP.Native": {
+          "target": "project"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,55 @@
+﻿{
+  "version": "2.0.4-*",
+
+  "description": "Simple DirectMedia Layer is a cross-platform development library designed to provide low level access to audio, keyboard, mouse, joystick, and graphics hardware via OpenGL and Direct3D.This package contains native libraries of Windows, macOS, and Linux.",
+
+  "packOptions": {
+    "repository": {
+      "type": "git",
+      "url": "git://github.com/noliar/SDL-package"
+    },
+    "licenseUrl": "http://www.gzip.org/zlib/zlib_license.html",
+    "projectUrl": "https://github.com/noliar/SDL-package",
+    "tags": [
+      "SDL",
+      "native",
+      "netcore"
+    ],
+    "files": {
+      "mappings": {
+        "runtimes/win7-x64/native/": "runtimes/win7-x64/native/*",
+        "runtimes/win7-x86/native/": "runtimes/win7-x86/native/*",
+        "runtimes/osx-x32/native/": "runtimes/osx-x32/native/*",
+        "runtimes/osx-x64/native/": "runtimes/osx-x64/native/*",
+        "runtimes/linux-x64/native/": "runtimes/linux-x64/native/*"
+      }
+    }
+  },
+
+  "tools": {
+    "DevZH.RuntimesInternalCopier": "1.0.0"
+  },
+
+  "frameworks": {
+    "netstandard1.0": {
+      "dependencies": {
+        "DevZH.SDL.Internal-Darwin": {
+          "type": "build",
+          "version": "2.0.4"
+        },
+        "DevZH.SDL.Internal-Linux": {
+          "type": "build",
+          "version": "2.0.4"
+        },
+        "DevZH.SDL.Internal-Windows": {
+          "type": "build",
+          "version": "2.0.4"
+        }
+      }
+    }
+  },
+
+  "scripts": {
+    "postrestore": "dotnet copy-runtimes -p DevZH.SDL.Internal"
+  }
+}
