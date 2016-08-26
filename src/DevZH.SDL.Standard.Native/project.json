@@ -1,6 +1,8 @@
 ﻿{
   "version": "2.0.4-*",
 
+  "authors": [ "www.libsdl.org" ],
+
   "description": "Simple DirectMedia Layer is a cross-platform development library designed to provide low level access to audio, keyboard, mouse, joystick, and graphics hardware via OpenGL and Direct3D.This package contains native libraries of Windows, macOS, and Linux.",
 
   "packOptions": {
