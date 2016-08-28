@@ -37,15 +37,15 @@
       "dependencies": {
         "DevZH.SDL.Internal-Darwin": {
           "type": "build",
-          "version": "2.0.4"
+          "version": "2.0.4-*"
         },
         "DevZH.SDL.Internal-Linux": {
           "type": "build",
-          "version": "2.0.4"
+          "version": "2.0.4-*"
         },
         "DevZH.SDL.Internal-Windows": {
           "type": "build",
-          "version": "2.0.4"
+          "version": "2.0.4-*"
         }
       }
     }
