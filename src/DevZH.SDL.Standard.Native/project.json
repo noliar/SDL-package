@@ -21,7 +21,7 @@
       "mappings": {
         "runtimes/win7-x64/native/": "runtimes/win7-x64/native/*",
         "runtimes/win7-x86/native/": "runtimes/win7-x86/native/*",
-        "runtimes/osx-x32/native/": "runtimes/osx-x32/native/*",
+        "runtimes/osx-x86/native/": "runtimes/osx-x86/native/*",
         "runtimes/osx-x64/native/": "runtimes/osx-x64/native/*",
         "runtimes/linux-x64/native/": "runtimes/linux-x64/native/*"
       }
