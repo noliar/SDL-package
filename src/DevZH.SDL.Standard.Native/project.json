@@ -29,7 +29,7 @@
   },
 
   "tools": {
-    "DevZH.RuntimesInternalCopier": "1.0.0"
+    "DevZH.RuntimesInternalCopier": "1.0.1"
   },
 
   "frameworks": {
@@ -52,6 +52,6 @@
   },
 
   "scripts": {
-    "postrestore": "dotnet copy-runtimes -p DevZH.SDL.Internal"
+    "postrestore": "dotnet copy-runtimes -p DevZH.SDL.Internal --enable-pack"
   }
 }
